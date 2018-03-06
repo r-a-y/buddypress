@@ -153,6 +153,9 @@ class BP_Blogs_Template {
 				'add_args'  => array(),
 			) );
 		}
+
+		// Require template loop functions.
+		require_once buddypress()->plugin_dir . 'bp-blogs/bp-blogs-functions-loop.php';
 	}
 
 	/**
