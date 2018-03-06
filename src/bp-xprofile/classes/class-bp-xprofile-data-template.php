@@ -161,6 +161,9 @@ class BP_XProfile_Data_Template {
 		$this->groups      = bp_xprofile_get_groups( $r );
 		$this->group_count = count( $this->groups );
 		$this->user_id     = $r['user_id'];
+
+		// Require template loop functions.
+		require_once buddypress()->plugin_dir . 'bp-xprofile/bp-xprofile-functions-loop.php';
 	}
 
 	/**
