@@ -218,6 +218,9 @@ class BP_Messages_Box_Template {
 				'add_args'  => $add_args,
 			) );
 		}
+
+		// Require template loop functions.
+		require_once buddypress()->plugin_dir . 'bp-messages/loops/has-message-threads-functions.php';
 	}
 
 	/**

@@ -90,6 +90,9 @@ class BP_Messages_Thread_Template {
 	public function __construct( $thread_id = 0, $order = 'ASC', $args = array() ) {
 		$this->thread        = new BP_Messages_Thread( $thread_id, $order, $args );
 		$this->message_count = count( $this->thread->messages );
+
+		// Require template loop functions.
+		require_once buddypress()->plugin_dir . 'bp-messages/loops/has-messages-functions.php';
 	}
 
 	/**
