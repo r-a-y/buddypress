@@ -243,6 +243,9 @@ class BP_Notifications_Template {
 				'add_args'  => $add_args,
 			) );
 		}
+
+		// Require template loop functions.
+		require_once buddypress()->plugin_dir . 'bp-notifications/bp-notifications-functions-loop.php';
 	}
 
 	/**
