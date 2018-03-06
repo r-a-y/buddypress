@@ -194,6 +194,9 @@ class BP_Core_Members_Template {
 				'add_args'  => $add_args,
 			) );
 		}
+
+		// Require activity template loop functions.
+		require_once buddypress()->plugin_dir . 'bp-members/bp-members-functions-loop.php';
 	}
 
 	/**
