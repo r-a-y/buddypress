@@ -160,6 +160,9 @@ class BP_Groups_Membership_Requests_Template {
 			'mid_size'  => 1,
 			'add_args'  => array(),
 		) );
+
+		// Require template loop functions.
+		require_once buddypress()->plugin_dir . 'bp-groups/loops/has-membership-requests-functions.php';
 	}
 
 	/**

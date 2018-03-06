@@ -135,6 +135,9 @@ class BP_Groups_Invite_Template {
 		} else {
 			$this->pag_links = '';
 		}
+
+		// Require template loop functions.
+		require_once buddypress()->plugin_dir . 'bp-groups/loops/has-invites-functions.php';
 	}
 
 	/**
