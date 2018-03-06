@@ -294,6 +294,9 @@ class BP_Activity_Template {
 				'add_args'  => array(),
 			) );
 		}
+
+		// Require activity template loop functions.
+		require_once buddypress()->plugin_dir . 'bp-activity/bp-activity-functions-loop.php';
 	}
 
 	/**
